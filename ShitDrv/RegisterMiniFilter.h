@@ -1,0 +1,37 @@
+#ifndef __REGISTER_MINIFILTER_H__
+#define __REGISTER_MINIFILTER_H__
+
+
+typedef struct _INSTANCE_CONTEXT {
+    // FILE_DEVICE_CD_ROM_FILE_SYSTEM 
+    // FILE_DEVICE_DISK_FILE_SYSTEM 
+    // FILE_DEVICE_NETWORK_FILE_SYSTEM
+    ULONG m_DeviceType; 
+    // FILE_READ_ONLY_DEVICE 
+    // FILE_FLOPPY_DISKETTE
+    // FILE_REMOTE_DEVICE
+    // FILE_REMOVABLE_MEDIA
+    ULONG m_DeviceCharacteristics;
+    // FLT_FSTYPE_UNKNOWN
+    // FLT_FSTYPE_NTFS
+    // FLT_FSTYPE_FAT
+    // FLT_FSTYPE_CDFS
+    // FLT_FSTYPE_NFS
+    ULONG m_FSType;
+    ULONG m_SectorSize;
+    WCHAR m_VolumeName[MAX_PATH];
+
+}INSTANCE_CONTEXT ,*PINSTANCE_CONTEXT ;
+
+NTSTATUS MiniFilterUnload(FLT_FILTER_UNLOAD_FLAGS Flags);
+
+NTSTATUS MiniFilterInstanceSetup(PCFLT_RELATED_OBJECTS FltObjects, \
+								 FLT_INSTANCE_SETUP_FLAGS Flags, \
+								 DEVICE_TYPE VolumeDeviceType, \
+								 FLT_FILESYSTEM_TYPE VolumeFilesystemType);
+
+VOID MiniFilterInstanceTeardownStart(PCFLT_RELATED_OBJECTS FltObjects, \
+									 FLT_INSTANCE_TEARDOWN_FLAGS Reason);
+NTSTATUS InitializeMiniFilter(PDRIVER_OBJECT pDrvObj);
+
+#endif

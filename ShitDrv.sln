@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShitDrv", "ShitDrv\ShitDrv.vcproj", "{B17ABD76-4287-4C6C-B519-448E0E1E389D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShitDrvInterface", "ShitDrvInterface\ShitDrvInterface.vcproj", "{3560F119-9FAB-42BD-B2A0-A9B6F1D668A7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestInterface", "TestInterface\TestInterface.vcproj", "{81794950-4647-4297-A418-3C2307168691}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B17ABD76-4287-4C6C-B519-448E0E1E389D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B17ABD76-4287-4C6C-B519-448E0E1E389D}.Debug|Win32.Build.0 = Debug|Win32
+		{B17ABD76-4287-4C6C-B519-448E0E1E389D}.Debug|x64.ActiveCfg = Debug|x64
+		{B17ABD76-4287-4C6C-B519-448E0E1E389D}.Debug|x64.Build.0 = Debug|x64
+		{B17ABD76-4287-4C6C-B519-448E0E1E389D}.Release|Win32.ActiveCfg = Release|Win32
+		{B17ABD76-4287-4C6C-B519-448E0E1E389D}.Release|Win32.Build.0 = Release|Win32
+		{B17ABD76-4287-4C6C-B519-448E0E1E389D}.Release|x64.ActiveCfg = Release|x64
+		{B17ABD76-4287-4C6C-B519-448E0E1E389D}.Release|x64.Build.0 = Release|x64
+		{3560F119-9FAB-42BD-B2A0-A9B6F1D668A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3560F119-9FAB-42BD-B2A0-A9B6F1D668A7}.Debug|Win32.Build.0 = Debug|Win32
+		{3560F119-9FAB-42BD-B2A0-A9B6F1D668A7}.Debug|x64.ActiveCfg = Debug|Win32
+		{3560F119-9FAB-42BD-B2A0-A9B6F1D668A7}.Release|Win32.ActiveCfg = Release|Win32
+		{3560F119-9FAB-42BD-B2A0-A9B6F1D668A7}.Release|Win32.Build.0 = Release|Win32
+		{3560F119-9FAB-42BD-B2A0-A9B6F1D668A7}.Release|x64.ActiveCfg = Release|Win32
+		{81794950-4647-4297-A418-3C2307168691}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81794950-4647-4297-A418-3C2307168691}.Debug|Win32.Build.0 = Debug|Win32
+		{81794950-4647-4297-A418-3C2307168691}.Debug|x64.ActiveCfg = Debug|Win32
+		{81794950-4647-4297-A418-3C2307168691}.Release|Win32.ActiveCfg = Release|Win32
+		{81794950-4647-4297-A418-3C2307168691}.Release|Win32.Build.0 = Release|Win32
+		{81794950-4647-4297-A418-3C2307168691}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+LIBRARY ShitDrvInterface.dll
+
+EXPORTS
+SetRecordCallback
+ReleaseRecordCallback
+SetFltCtl
+SetCurClientPath
+SetSandBoxProcName
+StartInterface
+SetCurrentProcess
+GetFileMd5Sum
+InjectKtrapFrame

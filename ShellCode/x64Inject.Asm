@@ -1,0 +1,50 @@
+USE64
+
+x64InjectShellCode_Start:
+nop
+nop
+push rax
+push rcx
+push r15
+push rbp
+
+mov rbp,rsp
+call GetCurrentAddress 
+GetCurrentAddress:
+BASE_OFFSET_CURRENT_ADDRESS equ (GetCurrentAddress - x64InjectShellCode_Start)
+pop r15
+sub r15,BASE_OFFSET_CURRENT_ADDRESS
+
+mov rax,0x1111111111111111
+lea rcx,[r15 + x64_InjectDll_Path]
+call rax
+
+mov rsp,rbp
+pop rbp
+pop r15
+pop rcx
+pop rax
+mov rcx,0x4040404040404040
+jmp rcx
+;db 0x00
+;retn
+x64_InjectDll_Path:
+dq 0x8080808080808080
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+dq 0x0000000000000000
+
+x64InjectShellCode_End:
